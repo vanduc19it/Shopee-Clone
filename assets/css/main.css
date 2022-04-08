@@ -115,6 +115,7 @@
     transform-origin: calc(100% - 20px) top;
     animation: headerNotify ease-in 0.2s;
     display: none;
+    will-change: opacity, transform;
 }
 .header__notify::before {
     content: "";
