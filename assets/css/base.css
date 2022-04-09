@@ -35,6 +35,14 @@ html {  /*10px - 1rem */
         opacity: 1;
     }
 }
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
 /* modal */
 .modal {
     position:fixed;
@@ -43,6 +51,7 @@ html {  /*10px - 1rem */
     bottom: 0;
     left: 0;
     display:flex;
+    animation: fadeIn 1.5s linear;
 }
 .modal__overlay {
     position:absolute;
@@ -51,10 +60,12 @@ html {  /*10px - 1rem */
     background-color:rgba(0,0,0,0.3);
 }
 .modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
     margin:auto;
     position: relative;
     z-index: 1;
-
+    animation: growth linear 0.1s;
 } 
 .btn {
     min-width: 142px;
