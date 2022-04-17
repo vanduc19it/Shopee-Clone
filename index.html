@@ -17,8 +17,14 @@
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            <a href="https://banhang.shopee.vn/account/signin?next=%2F" class="">Kênh Người Bán</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            <a href="https://shopee.vn/m/sell-on-shopee" class="">Trở thành Người bán Shopee</a>
+                        </li>
                         <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
-                            Trở thành người bán shopee
+                            <a href="https://shopee.vn/web" class="">Tải ứng dụng</a>
                             <div class="header__qr">
                                 <img src="./assets/img/qrcode.png" alt="QR code" class="header__qr-img">
                                 <div class="header__qr-apps">
@@ -34,10 +40,10 @@
                         </li>
                         <li class="header__navbar-item">
                             <span class="header__navbar-item-title--no-pointer">Kết nối</span>
-                            <a href="" class="header__navbar-icon-link">
+                            <a href="https://www.facebook.com/ShopeeVN" class="header__navbar-icon-link">
                                 <i class="header_navbar-icon fab fa-facebook"></i>   
                             </a>
-                            <a href="" class="header__navbar-icon-link">
+                            <a href="https://www.instagram.com/Shopee_VN/" class="header__navbar-icon-link">
                                 <i class="header_navbar-icon fab fa-instagram"></i>   
                             </a>
                         </li>
@@ -105,14 +111,23 @@
                             </div>
                         </li>
                         <li class="header__navbar-item"> 
-                            <a href="" class="header__navbar-item-link">  
+                            <a href="https://help.shopee.vn/vn/s/" class="header__navbar-item-link">  
                                     <i class="header_navbar-icon far fa-circle-question"></i>    
                                 Hỗ Trợ
                             </a>
                         </li>
-                        <li class="header__navbar-item">Tiếng Việt</li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng Ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng Nhập</li>
+                        <li class="header__navbar-item header__navbar-item--language">
+                            <i class="header_navbar-icon fas fa-globe"></i>
+                            Tiếng Việt
+                            <i class="header_navbar-icon fa-solid fa-angle-down"></i>
+                            <div class="header__language">
+                                <ul class="header__language-list">
+                                    <li class="header__language-item"></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item  header__navbar-item--strong header__navbar-item--separate">Đăng Ký</li>
+                        <li class="header__navbar-item  header__navbar-item--strong">Đăng Nhập</li>
                     </ul>
                 </nav>
                 <!-- header-with-search -->
@@ -128,7 +143,22 @@
                         </svg>
                     </div>
                     <div class="header__search">
-                        <input type="text" class="header__search-input" placeholder="MUA 1 ĐƯỢC 3 QUÀ 22 TRIỆU">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="MUA 1 ĐƯỢC 3 QUÀ 22 TRIỆU">
+                            <!-- search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch Sử Tìm Kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Chuột không dây</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Bàn phím cơ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
                         <div class="header__search-select">
                             <span class="header__search-select-label">Trong Shop</span>
                             <i class="header__search-select-icon fa-solid fa-angle-down"></i>
