@@ -81,7 +81,7 @@ html {  /*10px - 1rem */
     animation: growth linear 0.1s;
 } 
 .btn {
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border:none;
@@ -92,7 +92,7 @@ html {  /*10px - 1rem */
     cursor: pointer;
     background-color: var(--white-color);
     color: var(--text-color);
-    display:flex;
+    display:inline-flex;
     justify-content: center;
     align-items: center;
     line-height:1.6rem;
