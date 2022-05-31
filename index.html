@@ -358,9 +358,9 @@
                                             <span class="home-product-item__price-current">200.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like">
-                                                <i class="far fa-heart"></i>
-                                                <!-- <i class="fas fa-heart"></i> -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
                                             </span>
                                             <div class="home-product-item__rating">
                                                 <i class="fas fa-star"></i>
@@ -493,5 +493,20 @@
 
         <!-- </div> -->
     <!-- </div> -->
+
+    <!-- Action like -->
+    <script>
+        let likeElement = $(".home-product-item__like");
+        likeElement.onclick = function(){
+            if(this.classList.contains("home-product-item__like--liked")){
+            this.classList.remove("home-product-item__like--liked") 
+            }
+            else {
+                this.classList.add("home-product-item__like--liked") 
+            }
+        }
+    </script>
+ 
+
 </body>
 </html>
