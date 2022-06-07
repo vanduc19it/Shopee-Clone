@@ -1045,12 +1045,34 @@ i.home-product-item__like-icon-fill {
     color: white;
 }
 .home-product-item__sale-off{
-
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 36px;
+    background-color: rgba(255,216,64,0.94);
+    text-align: center;
+    padding-top: 4px;
+}
+.home-product-item__sale-off::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-width: 0 20px 4px;
+    border-style: solid;
+    border-color: transparent rgba(255,216,64,0.94) transparent rgba(255,216,64,0.94);
 }
 .home-product-item__sale-off-percent{
-
+    color: #ee4d2d;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.3rem;
 }
 .home-product-item__sale-off-label{
-    
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+    color: white;
 }
 
