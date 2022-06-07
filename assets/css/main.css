@@ -466,6 +466,7 @@
     display:none;
     animation: fadeIn ease-in 0.2s;
     cursor: default;
+    z-index: 1;
 }
 .header__cart-wrap {
     position: relative;
@@ -530,6 +531,8 @@
 .header__cart-list-item {
     padding-left: 0;
     list-style: none;
+    max-height: 56vh;
+    overflow-y: auto;
 }
 .header__cart-item {
     display: flex;
@@ -558,9 +561,17 @@
 }
 .header__cart-item-name {
     font-size: 1.4rem;
+    line-height: 2rem;
+    max-height: 4rem;
+    overflow: hidden;
     font-weight: 500;
     color: var(--text-color);
     margin: 0;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: left;
 }
 .header__cart-item-price{
     font-size: 1.4rem;
@@ -836,7 +847,18 @@
 
 }
 .category-item {
-
+    position: relative;
+}
+.category-item:first-child::before {
+    display:none;
+}
+.category-item::before {
+    content: "";
+    border-top: 1px solid #e1e1e1;
+    position: absolute;
+    top: 0;
+    left: 16px;
+    right: 16px;
 }
 .category-item--active .category-item__link{
     color: var(--primary-color);
@@ -865,6 +887,7 @@
     color: var(--primary-color);
     right:-4px;
 }
+/* filter product */
 .home-filter {
     display: flex;
     align-items: center;
@@ -922,13 +945,29 @@
 .home-filter__page-btn--disabled .home-filter__page-icon {
     color: #ccc;
 }
-
+.home-product {
+    margin-bottom: 10px;
+}
 .home-product-item {
+    display: block;
     position: relative;
     background-color:var(--white-color);
     margin-top: 10px;
+    text-decoration: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    transition: transform ease-in 0.1s;
+    will-change: transform;
+   
+
+}
+.home-product-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.05);
 }
 .home-product-item__img {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
     padding-top: 100%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1053,6 +1092,7 @@ i.home-product-item__like-icon-fill {
     background-color: rgba(255,216,64,0.94);
     text-align: center;
     padding-top: 4px;
+    border-top-right-radius: 2px;
 }
 .home-product-item__sale-off::after{
     content: "";
