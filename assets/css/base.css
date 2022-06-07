@@ -147,6 +147,8 @@ html {  /*10px - 1rem */
     padding: 8px 16px;
     list-style: none;
     display:none;
+    z-index: 1;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.1);
 }
 .select-input__link {
     font-size: 1.4rem;
