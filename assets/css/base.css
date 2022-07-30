@@ -15,14 +15,14 @@ html {  /*10px - 1rem */
     box-sizing: border-box;
 }
 /* responsive */
-.grid {
+/* .grid {
     width: 1350px;
     max-width: 100%;
     margin: 0 auto;
 }
 .grid__full-width {
     width: 100%;
-}
+} */
 .grid__row {
     display:flex;
     flex-wrap: wrap;
