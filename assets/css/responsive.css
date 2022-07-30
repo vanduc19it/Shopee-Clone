@@ -24,9 +24,11 @@
         display: none;
     }
     .app__container {
-        margin-top: 68px;
+        margin-top: 112px;
     }
-    
+    .header__sort-bar {
+        display: flex;
+    }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
     .hide-on-tablet {
